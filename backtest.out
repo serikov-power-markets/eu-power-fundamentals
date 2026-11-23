@@ -1,0 +1,51 @@
+      target                                                     model  days    mae   rmse   bias   corr
+0   price_DE                                         last delivery day   731  20.58  27.95  -0.10  0.661
+1   price_DE      stack: ridge on residual load, fuel cost and nuclear   731  19.61  26.71 -16.12  0.886
+2   price_DE                ridge: stack and all fundamentals and lags   731  14.93  19.45  -3.38  0.903
+3   price_DE       delta: stack plus gradient boosting of its residual   731   9.99  14.53  -4.81  0.917
+4   price_DE              gradient boosting: all fundamentals and lags   731   8.93  13.25  -2.11  0.922
+5   price_DE       gradient boosting: fundamentals only, no price lags   731   9.22  13.82  -1.64  0.914
+6   price_DE  delta: as above plus French nuclear outages known on D-1   731  10.46  14.90  -4.52  0.913
+7   price_DE                       gradient boosting: all plus outages   731   8.93  13.10  -1.49  0.923
+8   price_FR                                         last delivery day   731  15.50  20.70  -0.11  0.824
+9   price_FR      stack: ridge on residual load, fuel cost and nuclear   731  18.48  24.68  -8.64  0.811
+10  price_FR                ridge: stack and all fundamentals and lags   731  14.55  18.11   0.14  0.884
+11  price_FR       delta: stack plus gradient boosting of its residual   731  13.52  17.30  -1.16  0.871
+12  price_FR              gradient boosting: all fundamentals and lags   731  12.35  15.76   2.57  0.896
+13  price_FR       gradient boosting: fundamentals only, no price lags   731  15.80  20.11   4.33  0.835
+14  price_FR  delta: as above plus French nuclear outages known on D-1   731  13.26  16.89  -1.25  0.879
+15  price_FR                       gradient boosting: all plus outages   731  11.96  15.13   2.06  0.903
+16    spread                                         last delivery day   731  15.96  21.59   0.01  0.615
+17    spread      stack: ridge on residual load, fuel cost and nuclear   731  16.45  21.42  -7.49  0.650
+18    spread                ridge: stack and all fundamentals and lags   731  13.10  17.21  -3.19  0.748
+19    spread       delta: stack plus gradient boosting of its residual   731  13.13  17.34  -3.44  0.734
+20    spread              gradient boosting: all fundamentals and lags   731  13.70  18.94  -7.87  0.714
+21    spread       gradient boosting: fundamentals only, no price lags   731  15.87  21.61  -7.67  0.609
+22    spread  delta: as above plus French nuclear outages known on D-1   731  12.66  16.79  -2.96  0.751
+23    spread                       gradient boosting: all plus outages   731  13.49  18.65  -7.59  0.722
+                                                  predictor  days  hit_rate_direction  mean_pnl_vs_previous_day_eur_mwh_cost0.5  mean_abs_daily_change
+5  delta: as above plus French nuclear outages known on D-1   731               0.780                                     11.48                  15.96
+2       delta: stack plus gradient boosting of its residual   731               0.754                                     11.07                  15.96
+1                ridge: stack and all fundamentals and lags   731               0.751                                     10.99                  15.96
+0      stack: ridge on residual load, fuel cost and nuclear   731               0.748                                     10.61                  15.96
+3              gradient boosting: all fundamentals and lags   731               0.729                                      9.68                  15.96
+6                       gradient boosting: all plus outages   731               0.721                                      9.58                  15.96
+4       gradient boosting: fundamentals only, no price lags   731               0.710                                      8.75                  15.96
+7                     rule: revert to the 7-day mean spread   731               0.639                                      6.32                  15.96
+8                          rule: repeat the previous change   731               0.410                                     -3.59                  15.96
+{'only_with_outages_right': 34, 'only_without_outages_right': 15, 'p_exact_mcnemar': 0.0094}
+{
+ "monitoring": {
+  "mae_2024": 13.03,
+  "mae_2025": 12.29,
+  "days_rolling30_above_1.5x_2024_mae": 8,
+  "psi_2025_vs_pre2024": {
+   "de_resid_fc": 0.17,
+   "fr_resid_fc": 0.32,
+   "gas_cost_l2": 4.38,
+   "eua_l2": 2.94,
+   "fr_nuclear_m7_l2": 3.25,
+   "de_price_l1": 1.98
+  }
+ }
+}

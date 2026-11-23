@@ -1,0 +1,10 @@
+predictor,days,hit_rate_direction,mean_pnl_vs_previous_day_eur_mwh_cost0.5,mean_abs_daily_change
+delta: as above plus French nuclear outages known on D-1,731,0.78,11.48,15.96
+delta: stack plus gradient boosting of its residual,731,0.754,11.07,15.96
+ridge: stack and all fundamentals and lags,731,0.751,10.99,15.96
+"stack: ridge on residual load, fuel cost and nuclear",731,0.748,10.61,15.96
+gradient boosting: all fundamentals and lags,731,0.729,9.68,15.96
+gradient boosting: all plus outages,731,0.721,9.58,15.96
+"gradient boosting: fundamentals only, no price lags",731,0.71,8.75,15.96
+rule: revert to the 7-day mean spread,731,0.639,6.32,15.96
+rule: repeat the previous change,731,0.41,-3.59,15.96

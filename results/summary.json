@@ -1,0 +1,308 @@
+{
+ "period": [
+  "2021-12-31",
+  "2025-12-31"
+ ],
+ "test_start": "2024-01-01",
+ "forecast_metrics": [
+  {
+   "target": "price_DE",
+   "model": "last delivery day",
+   "days": 731,
+   "mae": 20.58,
+   "rmse": 27.95,
+   "bias": -0.1,
+   "corr": 0.661
+  },
+  {
+   "target": "price_DE",
+   "model": "stack: ridge on residual load, fuel cost and nuclear",
+   "days": 731,
+   "mae": 19.61,
+   "rmse": 26.71,
+   "bias": -16.12,
+   "corr": 0.886
+  },
+  {
+   "target": "price_DE",
+   "model": "ridge: stack and all fundamentals and lags",
+   "days": 731,
+   "mae": 14.93,
+   "rmse": 19.45,
+   "bias": -3.38,
+   "corr": 0.903
+  },
+  {
+   "target": "price_DE",
+   "model": "delta: stack plus gradient boosting of its residual",
+   "days": 731,
+   "mae": 9.99,
+   "rmse": 14.53,
+   "bias": -4.81,
+   "corr": 0.917
+  },
+  {
+   "target": "price_DE",
+   "model": "gradient boosting: all fundamentals and lags",
+   "days": 731,
+   "mae": 8.93,
+   "rmse": 13.25,
+   "bias": -2.11,
+   "corr": 0.922
+  },
+  {
+   "target": "price_DE",
+   "model": "gradient boosting: fundamentals only, no price lags",
+   "days": 731,
+   "mae": 9.22,
+   "rmse": 13.82,
+   "bias": -1.64,
+   "corr": 0.914
+  },
+  {
+   "target": "price_DE",
+   "model": "delta: as above plus French nuclear outages known on D-1",
+   "days": 731,
+   "mae": 10.46,
+   "rmse": 14.9,
+   "bias": -4.52,
+   "corr": 0.913
+  },
+  {
+   "target": "price_DE",
+   "model": "gradient boosting: all plus outages",
+   "days": 731,
+   "mae": 8.93,
+   "rmse": 13.1,
+   "bias": -1.49,
+   "corr": 0.923
+  },
+  {
+   "target": "price_FR",
+   "model": "last delivery day",
+   "days": 731,
+   "mae": 15.5,
+   "rmse": 20.7,
+   "bias": -0.11,
+   "corr": 0.824
+  },
+  {
+   "target": "price_FR",
+   "model": "stack: ridge on residual load, fuel cost and nuclear",
+   "days": 731,
+   "mae": 18.48,
+   "rmse": 24.68,
+   "bias": -8.64,
+   "corr": 0.811
+  },
+  {
+   "target": "price_FR",
+   "model": "ridge: stack and all fundamentals and lags",
+   "days": 731,
+   "mae": 14.55,
+   "rmse": 18.11,
+   "bias": 0.14,
+   "corr": 0.884
+  },
+  {
+   "target": "price_FR",
+   "model": "delta: stack plus gradient boosting of its residual",
+   "days": 731,
+   "mae": 13.52,
+   "rmse": 17.3,
+   "bias": -1.16,
+   "corr": 0.871
+  },
+  {
+   "target": "price_FR",
+   "model": "gradient boosting: all fundamentals and lags",
+   "days": 731,
+   "mae": 12.35,
+   "rmse": 15.76,
+   "bias": 2.57,
+   "corr": 0.896
+  },
+  {
+   "target": "price_FR",
+   "model": "gradient boosting: fundamentals only, no price lags",
+   "days": 731,
+   "mae": 15.8,
+   "rmse": 20.11,
+   "bias": 4.33,
+   "corr": 0.835
+  },
+  {
+   "target": "price_FR",
+   "model": "delta: as above plus French nuclear outages known on D-1",
+   "days": 731,
+   "mae": 13.26,
+   "rmse": 16.89,
+   "bias": -1.25,
+   "corr": 0.879
+  },
+  {
+   "target": "price_FR",
+   "model": "gradient boosting: all plus outages",
+   "days": 731,
+   "mae": 11.96,
+   "rmse": 15.13,
+   "bias": 2.06,
+   "corr": 0.903
+  },
+  {
+   "target": "spread",
+   "model": "last delivery day",
+   "days": 731,
+   "mae": 15.96,
+   "rmse": 21.59,
+   "bias": 0.01,
+   "corr": 0.615
+  },
+  {
+   "target": "spread",
+   "model": "stack: ridge on residual load, fuel cost and nuclear",
+   "days": 731,
+   "mae": 16.45,
+   "rmse": 21.42,
+   "bias": -7.49,
+   "corr": 0.65
+  },
+  {
+   "target": "spread",
+   "model": "ridge: stack and all fundamentals and lags",
+   "days": 731,
+   "mae": 13.1,
+   "rmse": 17.21,
+   "bias": -3.19,
+   "corr": 0.748
+  },
+  {
+   "target": "spread",
+   "model": "delta: stack plus gradient boosting of its residual",
+   "days": 731,
+   "mae": 13.13,
+   "rmse": 17.34,
+   "bias": -3.44,
+   "corr": 0.734
+  },
+  {
+   "target": "spread",
+   "model": "gradient boosting: all fundamentals and lags",
+   "days": 731,
+   "mae": 13.7,
+   "rmse": 18.94,
+   "bias": -7.87,
+   "corr": 0.714
+  },
+  {
+   "target": "spread",
+   "model": "gradient boosting: fundamentals only, no price lags",
+   "days": 731,
+   "mae": 15.87,
+   "rmse": 21.61,
+   "bias": -7.67,
+   "corr": 0.609
+  },
+  {
+   "target": "spread",
+   "model": "delta: as above plus French nuclear outages known on D-1",
+   "days": 731,
+   "mae": 12.66,
+   "rmse": 16.79,
+   "bias": -2.96,
+   "corr": 0.751
+  },
+  {
+   "target": "spread",
+   "model": "gradient boosting: all plus outages",
+   "days": 731,
+   "mae": 13.49,
+   "rmse": 18.65,
+   "bias": -7.59,
+   "corr": 0.722
+  }
+ ],
+ "spread_direction": [
+  {
+   "predictor": "delta: as above plus French nuclear outages known on D-1",
+   "days": 731,
+   "hit_rate_direction": 0.78,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 11.48,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "delta: stack plus gradient boosting of its residual",
+   "days": 731,
+   "hit_rate_direction": 0.754,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 11.07,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "ridge: stack and all fundamentals and lags",
+   "days": 731,
+   "hit_rate_direction": 0.751,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 10.99,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "stack: ridge on residual load, fuel cost and nuclear",
+   "days": 731,
+   "hit_rate_direction": 0.748,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 10.61,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "gradient boosting: all fundamentals and lags",
+   "days": 731,
+   "hit_rate_direction": 0.729,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 9.68,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "gradient boosting: all plus outages",
+   "days": 731,
+   "hit_rate_direction": 0.721,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 9.58,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "gradient boosting: fundamentals only, no price lags",
+   "days": 731,
+   "hit_rate_direction": 0.71,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 8.75,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "rule: revert to the 7-day mean spread",
+   "days": 731,
+   "hit_rate_direction": 0.639,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": 6.32,
+   "mean_abs_daily_change": 15.96
+  },
+  {
+   "predictor": "rule: repeat the previous change",
+   "days": 731,
+   "hit_rate_direction": 0.41,
+   "mean_pnl_vs_previous_day_eur_mwh_cost0.5": -3.59,
+   "mean_abs_daily_change": 15.96
+  }
+ ],
+ "outage_effect_on_direction": {
+  "only_with_outages_right": 34,
+  "only_without_outages_right": 15,
+  "p_exact_mcnemar": 0.0094
+ },
+ "monitoring": {
+  "mae_2024": 13.03,
+  "mae_2025": 12.29,
+  "days_rolling30_above_1.5x_2024_mae": 8,
+  "psi_2025_vs_pre2024": {
+   "de_resid_fc": 0.17,
+   "fr_resid_fc": 0.32,
+   "gas_cost_l2": 4.38,
+   "eua_l2": 2.94,
+   "fr_nuclear_m7_l2": 3.25,
+   "de_price_l1": 1.98
+  }
+ }
+}

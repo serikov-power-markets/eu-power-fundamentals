@@ -1,0 +1,25 @@
+target,model,days,mae,rmse,bias,corr
+price_DE,last delivery day,731,20.58,27.95,-0.1,0.661
+price_DE,"stack: ridge on residual load, fuel cost and nuclear",731,19.61,26.71,-16.12,0.886
+price_DE,ridge: stack and all fundamentals and lags,731,14.93,19.45,-3.38,0.903
+price_DE,delta: stack plus gradient boosting of its residual,731,9.99,14.53,-4.81,0.917
+price_DE,gradient boosting: all fundamentals and lags,731,8.93,13.25,-2.11,0.922
+price_DE,"gradient boosting: fundamentals only, no price lags",731,9.22,13.82,-1.64,0.914
+price_DE,delta: as above plus French nuclear outages known on D-1,731,10.46,14.9,-4.52,0.913
+price_DE,gradient boosting: all plus outages,731,8.93,13.1,-1.49,0.923
+price_FR,last delivery day,731,15.5,20.7,-0.11,0.824
+price_FR,"stack: ridge on residual load, fuel cost and nuclear",731,18.48,24.68,-8.64,0.811
+price_FR,ridge: stack and all fundamentals and lags,731,14.55,18.11,0.14,0.884
+price_FR,delta: stack plus gradient boosting of its residual,731,13.52,17.3,-1.16,0.871
+price_FR,gradient boosting: all fundamentals and lags,731,12.35,15.76,2.57,0.896
+price_FR,"gradient boosting: fundamentals only, no price lags",731,15.8,20.11,4.33,0.835
+price_FR,delta: as above plus French nuclear outages known on D-1,731,13.26,16.89,-1.25,0.879
+price_FR,gradient boosting: all plus outages,731,11.96,15.13,2.06,0.903
+spread,last delivery day,731,15.96,21.59,0.01,0.615
+spread,"stack: ridge on residual load, fuel cost and nuclear",731,16.45,21.42,-7.49,0.65
+spread,ridge: stack and all fundamentals and lags,731,13.1,17.21,-3.19,0.748
+spread,delta: stack plus gradient boosting of its residual,731,13.13,17.34,-3.44,0.734
+spread,gradient boosting: all fundamentals and lags,731,13.7,18.94,-7.87,0.714
+spread,"gradient boosting: fundamentals only, no price lags",731,15.87,21.61,-7.67,0.609
+spread,delta: as above plus French nuclear outages known on D-1,731,12.66,16.79,-2.96,0.751
+spread,gradient boosting: all plus outages,731,13.49,18.65,-7.59,0.722
