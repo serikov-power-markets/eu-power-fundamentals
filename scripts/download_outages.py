@@ -7,11 +7,11 @@ from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, r"C:\Users\user\ie-isem-market\src")
+sys.path.insert(0, str(Path.home() / "ie-isem-market" / "src"))
 from isem import entsoe as E  # noqa: E402
 
 FR = "10YFR-RTE------C"
-OUT = Path(r"C:\Users\user\z_data\z_totsa\outages_fr")
+OUT = Path.home() / "z_data" / "z_totsa" / "outages_fr"
 OUT.mkdir(exist_ok=True)
 for m in pd.date_range("2021-10-01", "2026-01-01", freq="MS"):
     nxt = m + pd.offsets.MonthBegin(1)

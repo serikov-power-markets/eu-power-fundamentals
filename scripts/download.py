@@ -1,8 +1,9 @@
 import sys, time
 from pathlib import Path
-sys.path.insert(0, r"C:\Users\user\ie-isem-market\src")
+# ENTSO-E helper of the sibling project ie-isem-market (token from ENTSOE_TOKEN or ~/.entsoe_token, never written to disk)
+sys.path.insert(0, str(Path.home() / "ie-isem-market" / "src"))
 from isem import entsoe as E
-C = Path(r"C:\Users\user\z_data\z_totsa\cache")
+C = Path.home() / "z_data" / "z_totsa" / "cache"
 DE, FR = "10Y1001A1001A82H", "10YFR-RTE------C"
 S, T = "2022-01-01", "2026-10-01"
 jobs = []
